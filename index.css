@@ -1,0 +1,167 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f1faee;
+    color: #264653;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: #264653;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #e9c46a;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+header h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #e9c46a;
+    margin-top: 8px;
+}
+
+/* Menu */
+nav {
+    background: #2a9d8f;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+nav ul li a:hover {
+    background: #e76f51;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    text-align: left;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+section h3 {
+    font-size: 1.9rem;
+    color: #2a9d8f;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e76f51;
+    margin: 8px auto;
+    border-radius: 2px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+}
+
+strong {
+    color: #264653;
+}
+
+/* Footer */
+footer {
+    background: #264653;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.social-item {
+    text-align: center;
+}
+
+.social-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.social-item a img {
+    width: 40px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.social-item a img:hover {
+    transform: scale(1.2);
+}
+
+/* Ajuste para menu fixo */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
